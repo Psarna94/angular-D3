@@ -1,8 +1,12 @@
 <div class="header">
       <h3 class="text-muted">UFO sightings in 2008</h3>
 
-      <div ng-repeat="sighting in sightings">
-        {{sighting.reportedAt.$date}}
-      </div>
+
+      <rickshaw-chart
+        data="sightingsByDate"
+        color="steelblue"
+        renderer="renderer"
+        width="750"
+        height="450">
+      </rickshaw-chart>
     </div>
-    
